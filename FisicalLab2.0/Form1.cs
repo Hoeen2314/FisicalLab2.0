@@ -6,6 +6,7 @@ namespace FisicalLab2._0
         {
             InitializeComponent();
             rdbvelocidade.Checked = true;
+            pnlData.BackColor = Color.FromArgb(190, 255, 255, 255);
         }
 
         private void bntCalc_Click(object sender, EventArgs e)
@@ -41,6 +42,7 @@ namespace FisicalLab2._0
             lblNum3.Visible = false;
             lblNum2.Text = "Distancia:";
             lblNum1.Text = "Tempo";
+            lblMosRes.Text = "Velocidade:";
         }
 
         private void rdbAceleracao_CheckedChanged(object sender, EventArgs e)
@@ -49,6 +51,7 @@ namespace FisicalLab2._0
             lblNum3.Visible = false;
             lblNum1.Text = "Velocidade:";
             lblNum2.Text = "Tempo:";
+            lblMosRes.Text = "Aceleração:";
         }
 
         private void rdbMovUni_CheckedChanged(object sender, EventArgs e)
@@ -56,6 +59,7 @@ namespace FisicalLab2._0
             lblNum1.Text = "Espaço inicial:";
             lblNum2.Text = "Velocidade:";
             lblNum3.Text = "Tempo:";
+            lblMosRes.Text = "Espaço:";
             numVariavel3.Visible = true;
             lblNum3.Visible = true;
         }
@@ -65,6 +69,7 @@ namespace FisicalLab2._0
             lblNum1.Text = "Velocidade inicial:";
             lblNum2.Text = "aceleração:";
             lblNum3.Text = "Espaço:";
+            lblMosRes.Text = "Velocidade:";
             numVariavel3.Visible = true;
             lblNum3.Visible = true;
         }
