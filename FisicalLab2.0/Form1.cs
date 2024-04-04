@@ -7,6 +7,7 @@ namespace FisicalLab2._0
             InitializeComponent();
             rdbvelocidade.Checked = true;
             pnlData.BackColor = Color.FromArgb(190, 255, 255, 255);
+            VerificarCondicao();
         }
 
         private void bntCalc_Click(object sender, EventArgs e)
@@ -18,7 +19,7 @@ namespace FisicalLab2._0
             }
             else if (rdbAceleracao.Checked)
             {
-                float res = (float)numVariavel1.Value / (float)numVariavel2.Value;
+                float res = (float)numVariavel2.Value / (float)numVariavel1.Value;
                 lblResposta.Text = res.ToString();
             }
             else if (rdbMovUni.Checked)
@@ -38,6 +39,7 @@ namespace FisicalLab2._0
 
         private void rdbvelocidade_CheckedChanged(object sender, EventArgs e)
         {
+            VerificarCondicao();
             numVariavel3.Visible = false;
             lblNum3.Visible = false;
             lblNum2.Text = "Distancia:";
@@ -47,10 +49,11 @@ namespace FisicalLab2._0
 
         private void rdbAceleracao_CheckedChanged(object sender, EventArgs e)
         {
+            VerificarCondicao();
             numVariavel3.Visible = false;
             lblNum3.Visible = false;
-            lblNum1.Text = "Velocidade:";
-            lblNum2.Text = "Tempo:";
+            lblNum2.Text = "Velocidade:";
+            lblNum1.Text = "Tempo:";
             lblMosRes.Text = "Aceleração:";
         }
 
@@ -72,6 +75,18 @@ namespace FisicalLab2._0
             lblMosRes.Text = "Velocidade:";
             numVariavel3.Visible = true;
             lblNum3.Visible = true;
+        }
+
+        private void numVariavel2_ValueChanged(object sender, EventArgs e)
+        {
+            VerificarCondicao();
+        }
+        private void VerificarCondicao() //função para atualizar o teste de condição
+        {
+            if(numVariavel2.Value == 0)
+                bntCalc.Enabled = false;
+            else
+                bntCalc.Enabled = true;
         }
     }
 }
