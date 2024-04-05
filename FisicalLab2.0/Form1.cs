@@ -14,12 +14,12 @@ namespace FisicalLab2._0
         {
             if (rdbvelocidade.Checked)
             {
-                float res = (float)numVariavel2.Value / (float)numVariavel1.Value;
+                float res = (float)numVariavel1.Value / (float)numVariavel2.Value;
                 lblResposta.Text = res.ToString();
             }
             else if (rdbAceleracao.Checked)
             {
-                float res = (float)numVariavel2.Value / (float)numVariavel1.Value;
+                float res = (float)numVariavel1.Value / (float)numVariavel2.Value;
                 lblResposta.Text = res.ToString();
             }
             else if (rdbMovUni.Checked)
@@ -42,8 +42,8 @@ namespace FisicalLab2._0
             VerificarCondicao();
             numVariavel3.Visible = false;
             lblNum3.Visible = false;
-            lblNum2.Text = "Distancia:";
-            lblNum1.Text = "Tempo";
+            lblNum1.Text = "Distancia:";
+            lblNum2.Text = "Tempo";
             lblMosRes.Text = "Velocidade:";
         }
 
@@ -52,8 +52,8 @@ namespace FisicalLab2._0
             VerificarCondicao();
             numVariavel3.Visible = false;
             lblNum3.Visible = false;
-            lblNum2.Text = "Velocidade:";
-            lblNum1.Text = "Tempo:";
+            lblNum1.Text = "Velocidade:";
+            lblNum2.Text = "Tempo:";
             lblMosRes.Text = "Aceleração:";
         }
 

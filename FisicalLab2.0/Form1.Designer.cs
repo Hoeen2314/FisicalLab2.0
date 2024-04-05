@@ -56,9 +56,10 @@
             pnlFormula.Controls.Add(rdbMovUni);
             pnlFormula.Controls.Add(rdbAceleracao);
             pnlFormula.Controls.Add(rdbvelocidade);
-            pnlFormula.Location = new Point(11, 12);
+            pnlFormula.Location = new Point(10, 9);
+            pnlFormula.Margin = new Padding(3, 2, 3, 2);
             pnlFormula.Name = "pnlFormula";
-            pnlFormula.Size = new Size(776, 83);
+            pnlFormula.Size = new Size(679, 62);
             pnlFormula.TabIndex = 0;
             // 
             // rdbTorricelli
@@ -66,9 +67,10 @@
             rdbTorricelli.AutoSize = true;
             rdbTorricelli.Font = new Font("Bahnschrift SemiCondensed", 12F);
             rdbTorricelli.ForeColor = SystemColors.Desktop;
-            rdbTorricelli.Location = new Point(622, 31);
+            rdbTorricelli.Location = new Point(544, 23);
+            rdbTorricelli.Margin = new Padding(3, 2, 3, 2);
             rdbTorricelli.Name = "rdbTorricelli";
-            rdbTorricelli.Size = new Size(97, 28);
+            rdbTorricelli.Size = new Size(82, 23);
             rdbTorricelli.TabIndex = 3;
             rdbTorricelli.TabStop = true;
             rdbTorricelli.Text = "Torricelli";
@@ -80,9 +82,10 @@
             rdbMovUni.AutoSize = true;
             rdbMovUni.Font = new Font("Bahnschrift SemiCondensed", 12F);
             rdbMovUni.ForeColor = SystemColors.Desktop;
-            rdbMovUni.Location = new Point(399, 31);
+            rdbMovUni.Location = new Point(349, 23);
+            rdbMovUni.Margin = new Padding(3, 2, 3, 2);
             rdbMovUni.Name = "rdbMovUni";
-            rdbMovUni.Size = new Size(141, 28);
+            rdbMovUni.Size = new Size(116, 23);
             rdbMovUni.TabIndex = 2;
             rdbMovUni.TabStop = true;
             rdbMovUni.Text = "Mov. Uniforme";
@@ -94,9 +97,10 @@
             rdbAceleracao.AutoSize = true;
             rdbAceleracao.Font = new Font("Bahnschrift SemiCondensed", 12F);
             rdbAceleracao.ForeColor = SystemColors.Desktop;
-            rdbAceleracao.Location = new Point(213, 31);
+            rdbAceleracao.Location = new Point(186, 23);
+            rdbAceleracao.Margin = new Padding(3, 2, 3, 2);
             rdbAceleracao.Name = "rdbAceleracao";
-            rdbAceleracao.Size = new Size(117, 28);
+            rdbAceleracao.Size = new Size(97, 23);
             rdbAceleracao.TabIndex = 1;
             rdbAceleracao.TabStop = true;
             rdbAceleracao.Text = "Aceleração";
@@ -108,9 +112,10 @@
             rdbvelocidade.AutoSize = true;
             rdbvelocidade.Font = new Font("Bahnschrift SemiCondensed", 12F);
             rdbvelocidade.ForeColor = SystemColors.Desktop;
-            rdbvelocidade.Location = new Point(25, 31);
+            rdbvelocidade.Location = new Point(22, 23);
+            rdbvelocidade.Margin = new Padding(3, 2, 3, 2);
             rdbvelocidade.Name = "rdbvelocidade";
-            rdbvelocidade.Size = new Size(112, 28);
+            rdbvelocidade.Size = new Size(94, 23);
             rdbvelocidade.TabIndex = 0;
             rdbvelocidade.TabStop = true;
             rdbvelocidade.Text = "Velocidade";
@@ -122,10 +127,11 @@
             numVariavel1.DecimalPlaces = 1;
             numVariavel1.Font = new Font("Bahnschrift SemiCondensed", 12F);
             numVariavel1.Increment = new decimal(new int[] { 5, 0, 0, 65536 });
-            numVariavel1.Location = new Point(297, 17);
+            numVariavel1.Location = new Point(262, 15);
+            numVariavel1.Margin = new Padding(3, 2, 3, 2);
             numVariavel1.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numVariavel1.Name = "numVariavel1";
-            numVariavel1.Size = new Size(279, 32);
+            numVariavel1.Size = new Size(244, 27);
             numVariavel1.TabIndex = 1;
             // 
             // numVariavel2
@@ -133,10 +139,11 @@
             numVariavel2.DecimalPlaces = 1;
             numVariavel2.Font = new Font("Bahnschrift SemiCondensed", 12F);
             numVariavel2.Increment = new decimal(new int[] { 5, 0, 0, 65536 });
-            numVariavel2.Location = new Point(297, 67);
+            numVariavel2.Location = new Point(260, 50);
+            numVariavel2.Margin = new Padding(3, 2, 3, 2);
             numVariavel2.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numVariavel2.Name = "numVariavel2";
-            numVariavel2.Size = new Size(279, 32);
+            numVariavel2.Size = new Size(244, 27);
             numVariavel2.TabIndex = 2;
             numVariavel2.ValueChanged += numVariavel2_ValueChanged;
             // 
@@ -145,10 +152,11 @@
             numVariavel3.DecimalPlaces = 1;
             numVariavel3.Font = new Font("Bahnschrift SemiCondensed", 12F);
             numVariavel3.Increment = new decimal(new int[] { 5, 0, 0, 65536 });
-            numVariavel3.Location = new Point(297, 121);
+            numVariavel3.Location = new Point(260, 91);
+            numVariavel3.Margin = new Padding(3, 2, 3, 2);
             numVariavel3.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numVariavel3.Name = "numVariavel3";
-            numVariavel3.Size = new Size(279, 32);
+            numVariavel3.Size = new Size(244, 27);
             numVariavel3.TabIndex = 3;
             // 
             // lblNum1
@@ -157,9 +165,9 @@
             lblNum1.BackColor = Color.Transparent;
             lblNum1.Font = new Font("Bahnschrift", 12F);
             lblNum1.ForeColor = SystemColors.Desktop;
-            lblNum1.Location = new Point(80, 23);
+            lblNum1.Location = new Point(70, 17);
             lblNum1.Name = "lblNum1";
-            lblNum1.Size = new Size(62, 24);
+            lblNum1.Size = new Size(51, 19);
             lblNum1.TabIndex = 4;
             lblNum1.Text = "label1";
             // 
@@ -169,9 +177,9 @@
             lblNum2.BackColor = Color.Transparent;
             lblNum2.Font = new Font("Bahnschrift", 12F);
             lblNum2.ForeColor = SystemColors.Desktop;
-            lblNum2.Location = new Point(80, 73);
+            lblNum2.Location = new Point(70, 55);
             lblNum2.Name = "lblNum2";
-            lblNum2.Size = new Size(62, 24);
+            lblNum2.Size = new Size(51, 19);
             lblNum2.TabIndex = 5;
             lblNum2.Text = "label1";
             // 
@@ -181,9 +189,9 @@
             lblNum3.BackColor = Color.Transparent;
             lblNum3.Font = new Font("Bahnschrift", 12F);
             lblNum3.ForeColor = SystemColors.Desktop;
-            lblNum3.Location = new Point(80, 127);
+            lblNum3.Location = new Point(70, 95);
             lblNum3.Name = "lblNum3";
-            lblNum3.Size = new Size(65, 24);
+            lblNum3.Size = new Size(54, 19);
             lblNum3.TabIndex = 6;
             lblNum3.Text = "label2";
             // 
@@ -193,9 +201,9 @@
             lblMosRes.BackColor = Color.Transparent;
             lblMosRes.Font = new Font("Bahnschrift", 12F);
             lblMosRes.ForeColor = SystemColors.Desktop;
-            lblMosRes.Location = new Point(111, 256);
+            lblMosRes.Location = new Point(97, 192);
             lblMosRes.Name = "lblMosRes";
-            lblMosRes.Size = new Size(99, 24);
+            lblMosRes.Size = new Size(80, 19);
             lblMosRes.TabIndex = 7;
             lblMosRes.Text = "Resposta:";
             // 
@@ -204,18 +212,19 @@
             lblResposta.AutoSize = true;
             lblResposta.BackColor = Color.Transparent;
             lblResposta.Font = new Font("Bahnschrift SemiCondensed", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblResposta.Location = new Point(299, 256);
+            lblResposta.Location = new Point(262, 192);
             lblResposta.Name = "lblResposta";
-            lblResposta.Size = new Size(0, 24);
+            lblResposta.Size = new Size(0, 19);
             lblResposta.TabIndex = 8;
             // 
             // bntCalc
             // 
             bntCalc.Font = new Font("Bahnschrift SemiCondensed", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             bntCalc.ForeColor = SystemColors.Desktop;
-            bntCalc.Location = new Point(297, 183);
+            bntCalc.Location = new Point(260, 137);
+            bntCalc.Margin = new Padding(3, 2, 3, 2);
             bntCalc.Name = "bntCalc";
-            bntCalc.Size = new Size(165, 45);
+            bntCalc.Size = new Size(144, 34);
             bntCalc.TabIndex = 9;
             bntCalc.Text = "Calcular";
             bntCalc.UseVisualStyleBackColor = true;
@@ -232,20 +241,22 @@
             pnlData.Controls.Add(lblNum1);
             pnlData.Controls.Add(lblNum3);
             pnlData.Controls.Add(lblNum2);
-            pnlData.Location = new Point(11, 115);
+            pnlData.Location = new Point(10, 86);
+            pnlData.Margin = new Padding(3, 2, 3, 2);
             pnlData.Name = "pnlData";
-            pnlData.Size = new Size(776, 337);
+            pnlData.Size = new Size(679, 253);
             pnlData.TabIndex = 4;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.background;
-            ClientSize = new Size(800, 467);
+            ClientSize = new Size(700, 350);
             Controls.Add(pnlData);
             Controls.Add(pnlFormula);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "FisicalLab 2.0 - Top";
             pnlFormula.ResumeLayout(false);
